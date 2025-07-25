@@ -2,10 +2,12 @@ const $SourceUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.Source
 const $EntityFollowProjectile = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.EntityFollowProjectile');
 
 StartupEvents.registry('block', event => {
+    // 转化流体配置
     const FLUID_CONFIG = {
     allowed: [
         'minecraft:lava',
     ],
+    // 转换率
     conversionRate: {
         'minecraft:lava': 0.5,
     }
