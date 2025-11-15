@@ -14,6 +14,12 @@
   **注：该项目使用的相应翻译键值未提供，请自行添加。**  
 ![灌注充能](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/imbuementCharge.png)
 
+### [Create More Recipes](https://www.curseforge.com/minecraft/mc-mods/create-morerecipes)雪傀儡冷却室兼容Jade
+* [[Client脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jade_client.js)、[Startup脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/jade_startup.js)]  
+所需模组：[Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions)  
+![Cooled](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_cooled.png)  
+![Frozen](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_frozen.png)
+
 Here are some Kubejs projects for Minecraft modpack beginner.
 
 ### Fluid SourceLink
@@ -27,3 +33,9 @@ Required mods：[Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-n
   **Adds a special recipe type - Imbuement Synthesis: The 'Imbuement Charging' recipe requires drawing energy from a Thermo Generator located below the chamber during synthesis.**  
 By modifying the source code using Hotai, methods callable by KubeJS for controlling the recipe process were added. Utilizing the LevelEvents.tick event, during imbuement synthesis, the system checks the block below the Imbuement Chamber. If it is a Thermo Generator, energy is drawn from it; otherwise, the imbuement process stops.  
 **Note: The corresponding translation key values used in this project are not provided. Please add them by yourself.**
+
+### [Create More Recipes](https://www.curseforge.com/minecraft/mc-mods/create-morerecipes)'s Snowman Cooler Compatible with Jade
+* [[Client脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jade_client.js)、[Startup脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/jade_startup.js)]  
+Required mods：[Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions)  
+![Cooled](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_cooled.png)  
+![Frozen](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_frozen.png)
