@@ -1,3 +1,4 @@
+const $Block = Java.loadClass('net.minecraft.world.level.block.Block');
 const $IElementHelper = Java.loadClass('snownee.jade.api.ui.IElementHelper');
 
 JadeEvents.onClientRegistration(event => {

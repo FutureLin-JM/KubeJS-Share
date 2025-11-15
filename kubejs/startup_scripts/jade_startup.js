@@ -1,3 +1,4 @@
+const $BlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntity');
 const $SnowmanCoolerBlockEntity = Java.loadClass('fr.iglee42.cmr.cooler.SnowmanCoolerBlockEntity');
 
 JadeEvents.onCommonRegistration(event => {
