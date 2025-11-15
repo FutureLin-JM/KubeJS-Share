@@ -17,10 +17,10 @@ JEIAddedEvents.registerCategories(event => {
                 let sourceText = Text.translate('ars_nouveau.source', recipe.data.source.toFixed(0));
                 let energyText = Text.translate(
                     'jei.desc.kubejs.imbuement_charge.energy',
-                    recipe.data.energy.toFixed(0)
+                    numFormat(recipe.data.energy)
                 );
                 guiGraphics.drawWordWrap(Client.font, sourceText, 0, 100, 100, 0);
-                guiGraphics.drawWordWrap(Client.font, energyText, 0, 0, 100, 0);
+                guiGraphics.drawWordWrap(Client.font, energyText, 0, 0, 114, 0);
             });
     });
 });
@@ -102,4 +102,20 @@ function rotatePointAbout(point, center, degrees) {
         x: center.x + (point.x - center.x) * Math.cos(rad) - (point.y - center.y) * Math.sin(rad),
         y: center.y + (point.x - center.x) * Math.sin(rad) + (point.y - center.y) * Math.cos(rad),
     };
+}
+
+
+/**
+ * 格式化数字，为整数部分添加千位分隔符
+ * @param {number} num - 需要格式化的数字
+ * @returns {string} 添加了千位分隔符的数字字符串
+ */
+function numFormat(num){
+  var res=num.toString().replace(/\d+/, function(n){ // 先提取整数部分
+       // 为整数部分添加千位分隔符
+       return n.replace(/(\d)(?=(\d{3})+$)/g,function($1){
+          return $1+",";
+        });
+  })
+  return res;
 }
