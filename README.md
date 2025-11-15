@@ -35,7 +35,7 @@ By modifying the source code using Hotai, methods callable by KubeJS for control
 **Note: The corresponding translation key values used in this project are not provided. Please add them by yourself.**
 
 ### [Create More Recipes](https://www.curseforge.com/minecraft/mc-mods/create-morerecipes)'s Snowman Cooler Compatible with Jade
-* [[Client脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jade_client.js)、[Startup脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/jade_startup.js)]  
+* [[Client Script](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jade_client.js)、[Startup Script](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/jade_startup.js)]  
 Required mods：[Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions)  
 ![Cooled](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_cooled.png)  
 ![Frozen](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_frozen.png)
