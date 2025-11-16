@@ -2,7 +2,7 @@ const $Block = Java.loadClass('net.minecraft.world.level.block.Block');
 const $IElementHelper = Java.loadClass('snownee.jade.api.ui.IElementHelper');
 
 JadeEvents.onClientRegistration(event => {
-    event.block('r2aot:snowman_cooler', $Block).tooltip((tooltip, accessor) => {
+    event.block('kubejs:snowman_cooler', $Block).tooltip((tooltip, accessor) => {
         const { serverData } = accessor;
         if (!serverData) return;
         let activeFuel = serverData.get('activeFuel');
