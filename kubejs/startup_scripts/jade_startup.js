@@ -7,7 +7,9 @@ JadeEvents.onCommonRegistration(event => {
         const { blockEntity, block } = accessor;
         if (block.id !== 'cmr:snowman_cooler') return;
 
-        if (blockEntity.activeFuel && blockEntity.remainingBurnTime) {
+        if (blockEntity.isCreative()) {
+            tag.putBoolean('isCreative', true);
+        } else if(blockEntity.activeFuel && blockEntity.remainingBurnTime) {
             tag.putInt('activeFuel', blockEntity.activeFuel.ordinal());
             tag.putInt('remainingBurnTime', blockEntity.remainingBurnTime);
         }
