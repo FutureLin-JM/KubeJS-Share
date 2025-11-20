@@ -32,7 +32,7 @@ JadeEvents.onClientRegistration(event => {
             tooltip.append(Text.translatable('jade.infinity'));
         } else {
             let seconds = Math.floor(remainingBurnTime / 20);
-            tooltip.append(Text.translatable('jade.tooltip.snowman_cooler', seconds));
+            tooltip.append(Text.translatable('jade.tooltip.snowman_cooler', seconds.toFixed(0)));
         }
     });
 });
