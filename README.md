@@ -193,7 +193,6 @@ By modifying the source code using Hotai, methods callable by KubeJS for control
 **Code:**
 - [Core Code (FML Common Setup Event, Fan Type, Recipes)](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/ForegeEvent/fan_processing_type.js)
 - [JEI Recipe Registry](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jei/imbuement_charge.js)
-- [Translation Keys](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/assets/kubejs/lang/zh_cn.json#L7-L9)
 
 **所需模组：**
 [Create](https://www.curseforge.com/minecraft/mc-mods/create) · [Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions) · [AccessTransformerJS](https://www.curseforge.com/minecraft/mc-mods/accesstransformerjs)
