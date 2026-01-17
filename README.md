@@ -6,16 +6,15 @@
 所需模组：[PowerfulJS](https://www.curseforge.com/minecraft/mc-mods/powerfuljs)、[Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)、[Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions)
 
 ### 新生魔艺灌注室联动Powah热力发电机配方
-* [[核心代码(LevelEvents.tick事件)](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/server_scripts/tick_event/imbuement_chamber.js)、[魔改新生魔艺源码](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/hotai/com/hollingsworth/arsnouveau/common/block/tile/ImbuementTile.java)、[注册JEI配方](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jei/imbuement_charge.js)、[配方](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/server_scripts/recipes/imbuement_charge.js)]  
+* [[核心代码(LevelEvents.tick事件)](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/server_scripts/tick_event/imbuement_chamber.js)、[魔改新生魔艺源码](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/hotai/com/hollingsworth/arsnouveau/common/block/tile/ImbuementTile.java)、[JEI配方注册](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jei/imbuement_charge.js)、[配方](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/server_scripts/recipes/imbuement_charge.js)、[翻译键](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/assets/kubejs/lang/zh_cn.json#L2-L3)]  
 所需模组：[Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)、[Powah](https://www.curseforge.com/minecraft/mc-mods/powah-rearchitected)、[Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions)、[Hotai](https://www.curseforge.com/minecraft/mc-mods/hotai)
 * 描述：  
   **新增一种特殊配方——灌注合成：灌注充能的配方合成时需要从下方的热力发电机中抽取能量**  
   通过Hotai对源码的魔改，添加了可供Kubejs调用的控制配方进程的方法，利用LevelEvents.tick事件，在灌注合成时，会检查灌注方块下方的方块，并判断该方块是否为热力发电机，是则从该方块中抽取能量，否则停止灌注。  
-  **注：该项目使用的相应翻译键值未提供，请自行添加。**  
 ![灌注充能](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/imbuementCharge.png)
 
 ### [Create More Recipes](https://www.curseforge.com/minecraft/mc-mods/create-morerecipes)雪傀儡冷却室兼容Jade
-* [[Client脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jade_client.js)、[Startup脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/jade_startup.js)]  
+* [[Client脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jade_client.js)、[Startup脚本](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/jade_startup.js)、[翻译键](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/assets/kubejs/lang/zh_cn.json#L5)]  
 所需模组：[Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions)  
 ![Cooled](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_cooled.png)  
 ![Frozen](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_frozen.png)
@@ -32,10 +31,11 @@ Required mods：[Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-n
 * Description:  
   **Adds a special recipe type - Imbuement Synthesis: The 'Imbuement Charging' recipe requires drawing energy from a Thermo Generator located below the chamber during synthesis.**  
 By modifying the source code using Hotai, methods callable by KubeJS for controlling the recipe process were added. Utilizing the LevelEvents.tick event, during imbuement synthesis, the system checks the block below the Imbuement Chamber. If it is a Thermo Generator, energy is drawn from it; otherwise, the imbuement process stops.  
-**Note: The corresponding translation key values used in this project are not provided. Please add them by yourself.**
 
 ### [Create More Recipes](https://www.curseforge.com/minecraft/mc-mods/create-morerecipes)'s Snowman Cooler Compatible with Jade
 * [[Client Script](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/client_scripts/jade_client.js)、[Startup Script](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/kubejs/startup_scripts/jade_startup.js)]  
 Required mods：[Kubejs Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-additions)  
 ![Cooled](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_cooled.png)  
 ![Frozen](https://github.com/FutureLin-JM/KubeJS-Share/blob/main/images/snowman_cooler_frozen.png)
+
+**Note: The translation keys used in this project only include the zh_cn version. For other languages, please translate and add them yourself.**
