@@ -69,8 +69,10 @@ ForgeModEvents.onEvent('net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEve
         },
     };
 
-    global.fanProcessingTypes(event, global.FanTypes.Honey, global.FanRecipes.Honey);
-    global.fanProcessingTypes(event, global.FanTypes.Chocolate, global.FanRecipes.Chocolate);
+    // 自动注册所有鼓风机类型
+    Object.keys(global.FanTypes).forEach(typeName => {
+        global.fanProcessingTypes(event, global.FanTypes[typeName], global.FanRecipes[typeName]);
+    });
 });
 
 /**
