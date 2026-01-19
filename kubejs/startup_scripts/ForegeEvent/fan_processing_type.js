@@ -151,7 +151,6 @@ global.fanProcessingTypes = (event, fanType, recipes) => {
                 let hit = recipe.chance == null || Math.random() <= recipe.chance;
                 if (hit) successCount++;
             }
-            if (successCount === 0) return null;
 
             let resultItemId;
             let resultCount = Math.max(recipe.count ?? 1, 1);
